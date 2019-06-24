@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/night_mode_layout"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+    android:orientation="horizontal">
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:id="@+id/iconSleepTextViewId"
+            android:textColor="@color/orange_color"
+            android:textSize="24sp"
+            android:layout_alignLeft="@+id/sleepPickerId"
+            android:layout_alignTop="@+id/sleepPickerId"
+            android:layout_alignRight="@+id/sleepPickerId"
+            android:layout_alignBottom="@+id/sleepPickerId"
+            android:gravity="center_vertical|left"
+            />
+
+    <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleepPickerId"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/sunset"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:id="@+id/iconWakeUpTextViewId"
+            android:textColor="@color/orange_color"
+            android:textSize="24sp"
+            android:layout_alignLeft="@+id/wakeupPickerId"
+            android:layout_alignTop="@+id/wakeupPickerId"
+            android:layout_alignRight="@+id/wakeupPickerId"
+            android:layout_alignBottom="@+id/wakeupPickerId"
+            android:gravity="center_vertical|left"/>
+
+    <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wakeupPickerId"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/sunrise"/>
+    
+</RelativeLayout>
